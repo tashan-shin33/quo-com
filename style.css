@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fffbef;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  max-width: 180px;
+  margin: 70px 0 0 300px;
+  padding: 10px 20px;
+  text-align: right;
+
+}
+
+input {
+  margin: 0 0 40px 20px;
+  padding: 8px 30px;
+}
+
+
+.wrapper {
+  text-align: center;
+}
+
+button {
+  width: 160px;
+  height: 35px;
+  font-size: 0.75em;
+  border: none;
+  margin: 50px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.output-title {
+  margin: 50px 0px 50px 450px;
+
+}
+
+.sum-erea {
+  display: flex;
+
+}
+
+#sum-output {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  margin-top: 60px;
+
+}
+
+#zei1 {
+  margin-top: 40px;
+}

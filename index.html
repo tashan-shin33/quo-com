@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>見積比較確認</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1 class="site-title">エアコン見積比較</h1>
+      <div class="sum-erea">
+        <h2 class="output-title">総額</h2>
+        <div id="sum-output"></div>
+      </div>
+
+      <span class="sec-title">利益率</span>
+      <input id="zei1" type="number" placeholder="利益率入力"> <br>
+
+      <span class="sec-title">エアコン本体</span>
+      <input id="aircon" type="number" placeholder="エアコン本体金額">
+      <input id="aircon-sum" type="number" placeholder="エアコン本体数量">
+      <button id="reset-aircon">リセットエアコン</button>
+      <br>
+
+      <span class="sec-title">配管</span>
+      <input id="haikan-kata" type="text" placeholder="配管型名">
+      <input id="haikan" type="number" placeholder="配管金額">
+      <input id="haikan-sum" type="number" placeholder="配管数量">
+      <button id="reset-haikan">リセット配管</button>
+      <br>
+
+      <span class="sec-title">化粧カバー</span>
+      <input id="cover1-kata" type="text" placeholder="化粧カバー型名">
+      <input id="cover1" type="number" placeholder="配管カバー金額">
+      <input id="cover1-sum" type="number" placeholder="配管カバー数量">
+      <button id="reset-cover">リセットカバー</button>
+      <br>
+
+      <span class="sec-title">室外機アングル</span>
+      <input id="angle1-kata" type="text" placeholder="室外機アングル型名">
+      <input id="angle1" type="number" placeholder="室外機アングル金額">
+      <input id="angle1-sum" type="number" placeholder="室外機アングル数量">
+      <button id="reset-angle">リセットアングル</button>
+      <br>
+
+      <button id="sumA" type="submit">総額</button>
+      <button id="reset">リセット</button>
+
+    </div>
+  </body>
+
+</html>

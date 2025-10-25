@@ -1,0 +1,67 @@
+window.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('sumA').addEventListener('click', () => {
+    //税率数値化
+    const zei = document.getElementById('zei1').value;
+    let ZEI = Number.parseInt(zei);
+
+    //エアコン本体計算
+    const ARC1 = document.getElementById('aircon').value;
+    const ARC2 = document.getElementById('aircon-sum').value;
+    let ARCA = Number.parseInt(ARC1);
+    let ARCB = Number.parseInt(ARC2);
+    let ARCSUM = ARCA * ARCB;
+    //エアコン本体計算リセット
+    this.document.getElementById('reset-aircon').addEventListener('click', () => {
+      document.getElementById('aircon').value = "";
+      document.getElementById('aircon-sum').value = "";
+    })
+
+    //配管計算
+    const PIP1 = document.getElementById('haikan').value;
+    const PIP2 = document.getElementById('haikan-sum').value;
+    let PIPA = Number.parseInt(PIP1);
+    let PIPB = Number.parseInt(PIP2);
+    let PIPSUM = PIPA * PIPB;
+    //配管計算リセット
+    this.document.getElementById('reset-haikan').addEventListener('click', () => {
+      document.getElementById('haikan').value = "";
+      document.getElementById('haikan-sum').value = "";
+    })
+
+    //化粧カバー計算
+    const COV1 = document.getElementById('cover1').value;
+    const COV2 = document.getElementById('cover1-sum').value;
+    let COVA = Number.parseInt(COV1);
+    let COVB = Number.parseInt(COV2);
+    let COVSUM = COVA * COVB;
+    //化粧カバーリセット
+    this.document.getElementById('reset-cover').addEventListener('click', () => {
+      document.getElementById('cover1').value = "";
+      document.getElementById('cover1-sum').value = "";
+    })
+
+
+    //室外機アングル計算
+    const ANG1 = document.getElementById('angle1').value;
+    const ANG2 = document.getElementById('angle1-sum').value;
+    let ANGA = Number.parseInt(ANG1);
+    let ANGB = Number.parseInt(ANG2);
+    let ANGSUM = ANGA * ANGB;
+    //室外機アングルリセット
+    this.document.getElementById('reset-angle').addEventListener('click', () => {
+      document.getElementById('angle1').value = "";
+      document.getElementById('angle1-sum').value = "";
+    })
+
+    //総合計計算
+    let SUMA = ARCSUM + PIPSUM + COVSUM + ANGSUM;
+    let SUMB = SUMA * (ZEI / 100) + SUMA;
+
+    //総合計計算表示
+    document.getElementById('sum-output').innerHTML = SUMB;
+
+  });
+  this.document.getElementById('reset').addEventListener('click', () => {
+    document.getElementById('sum-output').innerHTML = "";
+  })
+})
